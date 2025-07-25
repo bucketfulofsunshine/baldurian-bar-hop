@@ -23,7 +23,7 @@ A: Highly unlikely. The reward items are meant to be weird and whimsical. So, wh
 
 ## FUTURE PLANS
 
-* Add a contest or duet with a bard (if the player also has a Bard-class level). Or rest a moment to enjoy the music / heckle them instead. Get rewarded with a unique *bow* shaped out of a harp. 
+* Add a contest or duet with a bard (if the player also has a Bard-class level). Or rest a moment to enjoy the music / heckle them instead. 
 
 * A group of thieves are trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
 
