@@ -30,8 +30,6 @@ A: Highly unlikely. The reward items are meant to be weird and whimsical. So, wh
 
 * An inn room is haunted by a former resident. Shaman CHARNAMEs can speak with the ghost and solve the mystery (IWD-2 callback).
 
-* Tavern Brawl. Literally just a fight. High Charisma CHARNAMEs you can intimidate others into stopping ...or escalating the fight further.
-
 * Rats in a tavern cellar. The classic conundrum. Druids can talk to the rats and get them to move to greener pastures.
 
 * Master of Riddles. A mage claims to know more than all his peers combined. Challenge him to a duel of wits.
