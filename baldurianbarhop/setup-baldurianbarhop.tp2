@@ -35,12 +35,12 @@ SAY NAME2 ~Dwarven Mug-on-a-Stick~
 SAY DESC ~Dwarven Mug-on-a-Stick
 When your trusted weapon shatters under the weight of a vicious blow, as it often does during the Iron Crisis, what do you reach for during battle? Why your Dwarven Mug-on-a-Stick!
 
-This unique weapon combines the sturdy craftsmanship of a dwarven mug with the crushing force of a mace. Its hefty weight makes it ideal to hit enemies with, delivering blows that will stun your foes and leave your party intoxicated. When swung it produces a faint, but unmistakable, clinking sound - which harkens back to the camaraderie of a tavern.
+This unique weapon combines the sturdy craftsmanship of a dwarven mug with the crushing force of a mace. Its hefty weight makes it ideal to hit enemies with, delivering blows that will stun your foes and leave your party intoxicated.
 
 STATISTICS:
 
 Combat abilities:
-– 30% chance per hit of stunning target for 2 rounds (Save vs. Spell negates)
+– 30% chance per hit of stunning target for 2 rounds
 – 20% chance of casting intoxication on party
 
 THAC0: +1
