@@ -1,0 +1,19 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        SetCutSceneBreakable(FALSE)
+        Wait(1)
+        LeaveAreaLUAPanic("BFFOR","",[873.3315],NW)
+        LeaveAreaLUA("BFFOR","",[873.3315],NW)
+        ActionOverride(Player2,LeaveAreaLUA("BFFOR","",[920.3329],NW))
+        ActionOverride(Player3,LeaveAreaLUA("BFFOR","",[822.3341],NW))
+        ActionOverride(Player4,LeaveAreaLUA("BFFOR","",[870.3362],NW))
+        ActionOverride(Player5,LeaveAreaLUA("BFFOR","",[764.3373],NW))
+        ActionOverride(Player6,LeaveAreaLUA("BFFOR","",[818.3420],NW))
+        MultiPlayerSync()
+        SmallWait(25)
+        EndCutSceneMode()
+END
+
