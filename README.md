@@ -1,4 +1,4 @@
-# Baldurian Bar Hop(ping)
+# Baldurian Bar Hop
 A collection of whimsical D&D encounters set within the city of Baldur’s Gate.
 
 Take part in a drinking contest with dwarves, challenge an amateur bard to a friendly contest - or even an impromptu duet - and start a tavern brawl to see how things unfold.
