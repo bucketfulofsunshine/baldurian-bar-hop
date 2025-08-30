@@ -21,8 +21,11 @@ A: Highly unlikely. The reward items are meant to be weird and whimsical. So, wh
 
 * Added an option to drink with dwarves and win the Dwarven Mug-on-a-Stick item. A unique mace with questionable origins.
 
-## FUTURE PLANS
+#### 20250830 - Nightly.
 
+* Completely restructured the mod. Started on implementation of Fully Booked, Plot Twist & Dress to Distress.
+
+## FUTURE PLANS
 
 * Add a contest or duet with a bard (if the player also has a Bard-class level). Or rest a moment to enjoy the music / heckle them instead. 
 
