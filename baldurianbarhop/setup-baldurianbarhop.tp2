@@ -1,0 +1,159 @@
+BACKUP ~baldurianbarhop/backup~
+AUTHOR ~bucketfulofsunshine~
+VERSION ~v0.2~
+
+AUTO_TRA ~baldurianbarhop/%s~
+
+LANGUAGE ~English~
+         ~english~
+         ~baldurianbarhop/languages/english/bfbarks.tra~
+		 ~baldurianbarhop/languages/english/journal.tra~
+
+BEGIN ~Baldurian Bar Hop~
+REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
+
+// CamDawg's code for State.ids
+APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+UNLESS ~CD_STATE_NOTVALID~
+
+BEGIN ~Thirst Things First~ 
+// aka drinking with dwarves
+
+// dialogues
+COMPILE EVALUATE_BUFFER ~baldurianbarhop/Thirst Things First/d/BFSD1.d~
+                        ~baldurianbarhop/Thirst Things First/d/BFSD2.d~
+						
+// cre
+COPY ~baldurianbarhop/Thirst Things First/cre/BFSD1.cre~ ~override/BFSD1.cre~
+SAY NAME1 ~Tipsy Dwarf~
+SAY NAME2 ~Tipsy Dwarf~
+WRITE_ASCII SCRIPT_OVERRIDE ~BFSD1S~ #8
+WRITE_ASCII DEATHVAR ~BFSD1~ #32
+WRITE_ASCII DIALOG ~BFSD1~ #8
+
+COPY ~baldurianbarhop/Thirst Things First/cre/BFSD2.cre~ ~override/BFSD2.cre~
+SAY NAME1 ~Loud Dwarf~
+SAY NAME2 ~Loud Dwarf~
+WRITE_ASCII SCRIPT_OVERRIDE ~BFSD2S~ #8
+WRITE_ASCII DEATHVAR ~BFSD2~ #32
+WRITE_ASCII DIALOG ~BFSD2~ #8
+
+// bams
+COPY ~baldurianbarhop/Thirst Things First/bam~ ~override~
+
+// items
+// mace
+COPY ~baldurianbarhop/Thirst Things First/itm/BFSMG.ITM~ ~override~
+SAY NAME1 ~Dwarven Mug-on-a-Stick~
+SAY NAME2 ~Dwarven Mug-on-a-Stick~
+SAY DESC ~Dwarven Mug-on-a-Stick
+
+When your trusted weapon shatters under the weight of a vicious blow, as it often does during the Iron Crisis, what do you reach for during battle? Why your Dwarven Mug-on-a-Stick!
+
+This unique weapon combines the sturdy craftsmanship of a dwarven mug with the crushing force of a mace. Its hefty weight makes it ideal to hit enemies with, delivering blows that will stun your foes and leave your party intoxicated.
+
+STATISTICS:
+
+Combat abilities:
+– 30% chance per hit of stunning target for 2 rounds
+– 20% chance of casting intoxication on party
+
+THAC0: +1
+Damage: 1d8+4 (crushing)
+Speed Factor: 6
+Proficiency Type: Mace
+Type: One-handed
+Requires:
+ 10 Strength
+
+Weight: 8~
+
+// scripts
+EXTEND_BOTTOM ~AR0165.bcs~   ~baldurianbarhop/Thirst Things First/scripts/AR0165.baf~
+
+// BEGIN ~Dress to Distress~
+// masquerade with monsters in the three kegs
+
+// cre
+// COPY ~baldurianbarhop/Dress to Distress/cre/BFILLI.cre~ ~override/BFILLI.cre~
+// SAY NAME1 ~Mind Flayer~
+// SAY NAME2 ~Mind Flayer~
+
+// portrait
+// COPY ~baldurianbarhop/Dress to Distress/port~ ~override~
+
+BEGIN ~Fully Booked & Plot Twist~
+// book delivery to beregost & getting stuck inside said book
+
+ADD_JOURNAL TITLE (@9000) @9001 @9002 USING ~baldurianbarhop/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9003) @9004 USING ~baldurianbarhop/languages/english/journal.tra~
+
+// cre
+// avowed
+COPY ~baldurianbarhop/Fully Booked/cre/BFSCR.cre~ ~override/BFSCR.cre~
+SAY NAME1 ~Avowed~
+SAY NAME2 ~Avowed~
+
+// gazz, the missing avowed
+COPY ~baldurianbarhop/Fully Booked/cre/BFSCR2.cre~ ~override/BFSCR2.cre~
+SAY NAME1 ~Gazz~
+SAY NAME2 ~Gazz~
+
+// butler
+COPY ~baldurianbarhop/Fully Booked/cre/BFSRV.cre~ ~override/BFSRV.cre~
+SAY NAME1 ~Travenhurst Butler~
+SAY NAME2 ~Travenhurst Butler~
+
+// dragon
+COPY ~baldurianbarhop/Fully Booked/cre/BFDRAG.cre~ ~override/BFDRAG.cre~
+SAY NAME1 ~Young Green Dragon~
+SAY NAME2 ~Young Green Dragon~
+
+// fairy dragon
+COPY ~baldurianbarhop/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAIR.cre~
+SAY NAME1 ~Fairy Dragon~
+SAY NAME2 ~Fairy Dragon~
+
+// scripts
+EXTEND_BOTTOM ~AR2616.bcs~   ~baldurianbarhop/Fully Booked/scripts/AR2616.baf~
+EXTEND_BOTTOM ~AR3300.bcs~   ~baldurianbarhop/Fully Booked/scripts/AR3300.baf~
+EXTEND_BOTTOM ~BFFOR.bcs~    ~baldurianbarhop/Fully Booked/scripts/BFFOR.baf~
+COMPILE ~baldurianbarhop/Fully Booked/scripts/BFSCR.baf~
+
+// cutscenes
+COMPILE ~baldurianbarhop/Fully Booked/cutscenes~
+		
+// dialogues
+COMPILE ~baldurianbarhop/Fully Booked/d~
+
+// bams 
+COPY ~baldurianbarhop/Fully Booked/bam~ ~override~
+
+// areas
+COPY ~baldurianbarhop/Fully Booked/area~ ~override~
+
+// items
+// satchel
+COPY ~baldurianbarhop/Fully Booked/itm/BFSCB.STO~ ~override~
+COPY ~baldurianbarhop/Fully Booked/itm/BFSCB.ITM~ ~override~
+SAY NAME1 ~Satchel of the Avowed~
+SAY NAME2 ~Satchel of the Avowed~
+SAY DESC ~Satchel of the Avowed
+
+This enchanted satchel is standard issue among the Avowed of Candlekeep. Designed to aid in the secure transport of commissioned copies and rare texts, it allows its wielder to carry several books without burdening them with their weight. It also shields the tomes within from weather and wear: a necessity for those tasked with safeguarding Candlekeep's ever-growing trove of knowledge.
+
+STATISTICS:
+
+Weight: 2~
+
+// BEGIN ~Liquid Assets~
+// thieves trying to smuggle barrels out of the tavern
+
+// BEGIN ~Room for One More~
+// ghost in the tavern
+
+// BEGIN ~Mice to Meet You~
+// deal with the rats & mice in the cellar
+
+// BEGIN ~At Wit's End~
+// a wit & riddle contest against an egotistical mage
