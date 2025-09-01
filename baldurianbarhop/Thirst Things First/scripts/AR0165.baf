@@ -1,9 +1,0 @@
-IF
-Global("BFSDwarvesSpawn","AR0165",0)
-THEN
-RESPONSE #100
-CreateCreature("BFSD1",[211.471],SE)
-CreateCreature("BFSD2",[315.555],NW)
-SetGlobal("BFSDwarvesSpawn","AR0165",1)
-Continue()
-END

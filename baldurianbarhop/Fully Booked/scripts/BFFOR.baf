@@ -1,8 +1,0 @@
-IF
-Global("BFStorybookSpawn","GLOBAL",0)
-THEN
-RESPONSE #100
-CreateCreature("BFSCR2",[1673.378],N)
-SetGlobal("BFStorybookSpawn","GLOBAL",1)
-Continue()
-END
