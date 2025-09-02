@@ -19,7 +19,7 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 #### 20250902 - Nightly.
 
-* Completed Fully Booked & Plot Twist. Three quests are now implented & can be completed.
+* Completed Fully Booked & Plot Twist. Three quests can now be completed.
 
 ## FUTURE PLANS
 
