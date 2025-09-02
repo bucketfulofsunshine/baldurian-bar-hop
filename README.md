@@ -1,7 +1,7 @@
 # Baldurian Bar Hop
 A collection of tongue-in-cheek D&D encounters for BGEE.
 
-Take part in a drinking contest with dwarves, challenge an amateur bard to a friendly contest - or even an impromptu duet - & start a tavern brawl to see how things unfold.
+Take part in a drinking contest with dwarves, or assist an Avowed of Candlekeep with delivering a book.
 
 The taverns and inns of Baldur's Gate are brimming with adventures for those brave enough to seek them out. Survive the chaos & your party may earn some truly unique (& often humorous) rewards.
 
@@ -17,25 +17,19 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## CHANGELOG
 
-#### 20250104 - Nightly.
+#### 20250902 - Nightly.
 
-* Added an option to drink with dwarves & win the *Dwarven Mug-on-a-Stick* - a unique mace with questionable origins.
-
-#### 20250830 - Nightly.
-
-* Completely restructured the mod. Started on implementation of Fully Booked, Plot Twist & Dress to Distress.
+* Completed Fully Booked & Plot Twist. Three quests are now implented & can be completed.
 
 ## FUTURE PLANS
 
-* Add a contest or duet with a bard (if the player also has a Bard-class level). Or rest a moment to enjoy the music / heckle them instead. 
+* *Liquid Assets*. A group of thieves are trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
 
-* A group of thieves are trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
+* *Room for One More*. An inn room is haunted by a former resident. Shamans can speak with the ghost & solve the mystery (IWD-2 callback).
 
-* An inn room is haunted by a former resident. Shamans can speak with the ghost and solve the mystery (IWD-2 callback).
+* *Mice to Meet You*. Rats in a tavern cellar. The classic conundrum. Druids can talk to the rats & get them to move to greener pastures.
 
-* Rats in a tavern cellar. The classic conundrum. Druids can talk to the rats & get them to move to greener pastures.
-
-* Master of Riddles. A mage claims to know more than all his peers combined. Challenge him to a duel of wits.
+* *At Wit's End*. A mage claims to know more than all his peers combined. Challenge him to a duel of wits.
 
 * More mystery, more adventure, more...romance?
 
@@ -45,6 +39,8 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## CREDITS
 
-* The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. <3
+* The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, senzei! <3
 
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my mods & answering my modding questions. :)
+
+* [@royalprotector](https://github.com/szaumoor) for his continued wisdom & friendship. 
