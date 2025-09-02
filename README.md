@@ -39,8 +39,8 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## CREDITS
 
-* The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, senzei! <3
+* The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, sensei! <3
 
-* [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my modding questions. :)
+* [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my questions. :)
 
-* [@royalprotector](https://github.com/szaumoor) for continued wisdom & friendship. 
+* [@royalprotector](https://github.com/szaumoor) for continued modding wisdom & friendship. 
