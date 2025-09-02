@@ -1,0 +1,26 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        SetCutSceneBreakable(FALSE)
+		PlaySound("EFF_M08")
+		CreateVisualEffectObject("SPPORTAL",Player1)
+		CreateVisualEffectObject("SPPORTAL",Player2)
+		CreateVisualEffectObject("SPPORTAL",Player3)
+		CreateVisualEffectObject("SPPORTAL",Player4)
+		CreateVisualEffectObject("SPPORTAL",Player5)
+		CreateVisualEffectObject("SPPORTAL",Player6)
+        Wait(3)
+        LeaveAreaLUAPanic("BFFOR","",[1669.260],S)
+        LeaveAreaLUA("BFFOR","",[1669.260],S)
+        ActionOverride(Player2,LeaveAreaLUA("BFFOR","",[1611.237],S))
+        ActionOverride(Player3,LeaveAreaLUA("BFFOR","",[1711.236],S))
+        ActionOverride(Player4,LeaveAreaLUA("BFFOR","",[1613.173],S))
+        ActionOverride(Player5,LeaveAreaLUA("BFFOR","",[1658.174],S))
+        ActionOverride(Player6,LeaveAreaLUA("BFFOR","",[1720.177],S))
+		Explore()
+		MultiPlayerSync()
+        SmallWait(25)
+        EndCutSceneMode()
+END
