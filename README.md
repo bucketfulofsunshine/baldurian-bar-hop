@@ -43,4 +43,4 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my mods & answering my modding questions. :)
 
-* [@royalprotector](https://github.com/szaumoor) for his continued wisdom & friendship. 
+* [@royalprotector](https://github.com/szaumoor) for continued wisdom & friendship. 
