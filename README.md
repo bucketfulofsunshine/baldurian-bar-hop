@@ -3,7 +3,7 @@ A collection of tongue-in-cheek D&D encounters for BGEE.
 
 Take part in a drinking contest with dwarves, or assist an Avowed of Candlekeep with delivering a book.
 
-The taverns and inns of Baldur's Gate are brimming with adventures for those brave enough to seek them out. Survive the chaos & your party may earn some truly unique (& often humorous) rewards.
+The taverns & inns of Baldur's Gate are brimming with adventures for those brave enough to seek them out. Survive the chaos & your party may earn some truly unique (& often humorous) rewards.
 
 ## FAQ
 
