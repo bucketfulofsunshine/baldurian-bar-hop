@@ -1,9 +1,0 @@
-IF
-Global("BFSButlerSpawn","AR3300",0)
-GlobalLT("BFFULLYBOOKED","GLOBAL",2) 
-THEN
-RESPONSE #100
-CreateCreature("BFSRV",[3765.1031],S)
-SetGlobal("BFSButlerSpawn","AR3300",1)
-Continue()
-END
