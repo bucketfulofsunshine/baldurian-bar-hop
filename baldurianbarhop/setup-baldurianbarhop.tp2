@@ -91,12 +91,12 @@ ADD_JOURNAL TITLE (@9003) @9004 @9005 USING ~baldurianbarhop/languages/english/j
 
 // cre
 // avowed
-COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR.cre~ ~override/BFSCR.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR.cre~ ~override~
 SAY NAME1 ~Avowed~
 SAY NAME2 ~Avowed~
 
 // gazz, the missing avowed
-COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR2.cre~ ~override/BFSCR2.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR2.cre~ ~override~
 SAY NAME1 ~Gazz~
 SAY NAME2 ~Gazz~
 
@@ -111,7 +111,7 @@ SAY NAME1 ~Young Green Dragon~
 SAY NAME2 ~Young Green Dragon~
 
 // fairy dragons
-COPY ~%MOD_FOLDER%/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAIR.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFFAIR.cre~ ~override~
 SAY NAME1 ~Fairy Dragon~
 SAY NAME2 ~Fairy Dragon~
 
