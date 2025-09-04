@@ -1,39 +1,38 @@
 BACKUP ~baldurianbarhop/backup~
 AUTHOR ~bucketfulofsunshine~
 VERSION ~v0.2~
-
+ALWAYS
+    ACTION_IF !VARIABLE_IS_SET appended_states BEGIN
+        APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
+        UNLESS ~CD_STATE_NOTVALID~
+        OUTER_SET appended_states = 1
+    END
+END
 AUTO_TRA ~baldurianbarhop/%s~
-
 LANGUAGE ~English~
          ~english~
          ~baldurianbarhop/languages/english/bfbarks.tra~
 		 ~baldurianbarhop/languages/english/journal.tra~
 
-BEGIN ~Baldurian Bar Hop~
+BEGIN ~Thirst Things First~ DESIGNATED 0
 REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
-
-// CamDawg's code for State.ids
-APPEND ~STATE.IDS~ ~0x80101FEF CD_STATE_NOTVALID~
-UNLESS ~CD_STATE_NOTVALID~
-
-BEGIN ~Thirst Things First~ 
 // aka drinking with dwarves
 
-ADD_JOURNAL TITLE (@9006) @9007 @9008 USING ~baldurianbarhop/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9006) @9007 @9008 USING ~%MOD_FOLDER%/languages/english/journal.tra~
 
 // dialogues
-COMPILE EVALUATE_BUFFER ~baldurianbarhop/Thirst Things First/d/BFSD1.d~
-                        ~baldurianbarhop/Thirst Things First/d/BFSD2.d~
-						
+COMPILE EVALUATE_BUFFER ~%MOD_FOLDER%/Thirst Things First/d/BFSD1.d~
+                        ~%MOD_FOLDER%/Thirst Things First/d/BFSD2.d~
+
 // cre
-COPY ~baldurianbarhop/Thirst Things First/cre/BFSD1.cre~ ~override/BFSD1.cre~
+COPY ~%MOD_FOLDER%/Thirst Things First/cre/BFSD1.cre~ ~override/BFSD1.cre~
 SAY NAME1 ~Tipsy Dwarf~
 SAY NAME2 ~Tipsy Dwarf~
 WRITE_ASCII SCRIPT_OVERRIDE ~BFSD1S~ #8
 WRITE_ASCII DEATHVAR ~BFSD1~ #32
 WRITE_ASCII DIALOG ~BFSD1~ #8
 
-COPY ~baldurianbarhop/Thirst Things First/cre/BFSD2.cre~ ~override/BFSD2.cre~
+COPY ~%MOD_FOLDER%/Thirst Things First/cre/BFSD2.cre~ ~override/BFSD2.cre~
 SAY NAME1 ~Loud Dwarf~
 SAY NAME2 ~Loud Dwarf~
 WRITE_ASCII SCRIPT_OVERRIDE ~BFSD2S~ #8
@@ -41,15 +40,14 @@ WRITE_ASCII DEATHVAR ~BFSD2~ #32
 WRITE_ASCII DIALOG ~BFSD2~ #8
 
 // bams
-COPY ~baldurianbarhop/Thirst Things First/bam~ ~override~
+COPY ~%MOD_FOLDER%/Thirst Things First/bam~ ~override~
 
 // items
 // mace
-COPY ~baldurianbarhop/Thirst Things First/itm/BFSMG.ITM~ ~override~
+COPY ~%MOD_FOLDER%/Thirst Things First/itm/BFSMG.ITM~ ~override~
 SAY NAME1 ~Dwarven Mug-on-a-Stick~
 SAY NAME2 ~Dwarven Mug-on-a-Stick~
 SAY DESC ~Dwarven Mug-on-a-Stick
-
 When your trusted weapon shatters under the weight of a vicious blow, as it often does during the Iron Crisis, what do you reach for during battle? Why your Dwarven Mug-on-a-Stick!
 
 This unique weapon combines the sturdy craftsmanship of a dwarven mug with the crushing force of a mace. Its hefty weight makes it ideal to hit enemies with, delivering blows that will stun your foes and leave your party intoxicated.
@@ -71,87 +69,87 @@ Requires:
 Weight: 8~
 
 // scripts
-EXTEND_BOTTOM ~AR0165.bcs~   ~baldurianbarhop/Thirst Things First/scripts/AR0165.baf~
+EXTEND_BOTTOM ~AR0165.bcs~   ~%MOD_FOLDER%/Thirst Things First/scripts/AR0165.baf~
 
 // BEGIN ~Dress to Distress~
 // masquerade with monsters in the three kegs
 
 // cre
-// COPY ~baldurianbarhop/Dress to Distress/cre/BFILLI.cre~ ~override/BFILLI.cre~
+// COPY ~%MOD_FOLDER%/Dress to Distress/cre/BFILLI.cre~ ~override/BFILLI.cre~
 // SAY NAME1 ~Mind Flayer~
 // SAY NAME2 ~Mind Flayer~
 
 // portrait
-// COPY ~baldurianbarhop/Dress to Distress/port~ ~override~
+// COPY ~%MOD_FOLDER%/Dress to Distress/port~ ~override~
 
-BEGIN ~Fully Booked & Plot Twist~
+BEGIN ~Fully Booked & Plot Twist~ DESIGNATED 10
+REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // book delivery to beregost & getting stuck inside said book
 
-ADD_JOURNAL TITLE (@9000) @9001 @9002 USING ~baldurianbarhop/languages/english/journal.tra~
-ADD_JOURNAL TITLE (@9003) @9004 @9005 USING ~baldurianbarhop/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9000) @9001 @9002 USING ~%MOD_FOLDER%/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9003) @9004 @9005 USING ~%MOD_FOLDER%/languages/english/journal.tra~
 
 // cre
 // avowed
-COPY ~baldurianbarhop/Fully Booked/cre/BFSCR.cre~ ~override/BFSCR.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR.cre~ ~override~
 SAY NAME1 ~Avowed~
 SAY NAME2 ~Avowed~
 
 // gazz, the missing avowed
-COPY ~baldurianbarhop/Fully Booked/cre/BFSCR2.cre~ ~override/BFSCR2.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSCR2.cre~ ~override~
 SAY NAME1 ~Gazz~
 SAY NAME2 ~Gazz~
 
 // butler
-COPY ~baldurianbarhop/Fully Booked/cre/BFSRV.cre~ ~override/BFSRV.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFSRV.cre~ ~override/BFSRV.cre~
 SAY NAME1 ~Travenhurst Butler~
 SAY NAME2 ~Travenhurst Butler~
 
 // dragon
-COPY ~baldurianbarhop/Fully Booked/cre/BFDRAG.cre~ ~override/BFDRAG.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFDRAG.cre~ ~override/BFDRAG.cre~
 SAY NAME1 ~Young Green Dragon~
 SAY NAME2 ~Young Green Dragon~
 
 // fairy dragons
-COPY ~baldurianbarhop/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAIR.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFFAIR.cre~ ~override~
 SAY NAME1 ~Fairy Dragon~
 SAY NAME2 ~Fairy Dragon~
 
-COPY ~baldurianbarhop/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAI2.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAI2.cre~
 SAY NAME1 ~Fairy Dragon~
 SAY NAME2 ~Fairy Dragon~
 
-COPY ~baldurianbarhop/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAI3.cre~
+COPY ~%MOD_FOLDER%/Fully Booked/cre/BFFAIR.cre~ ~override/BFFAI3.cre~
 SAY NAME1 ~Fairy Dragon~
 SAY NAME2 ~Fairy Dragon~
 
 // scripts
-EXTEND_BOTTOM ~AR2616.bcs~   ~baldurianbarhop/Fully Booked/scripts/AR2616.baf~
-EXTEND_BOTTOM ~AR3300.bcs~   ~baldurianbarhop/Fully Booked/scripts/AR3300.baf~
-EXTEND_BOTTOM ~AR3320.bcs~   ~baldurianbarhop/Fully Booked/scripts/AR3320.baf~
-EXTEND_BOTTOM ~BFFOR.bcs~    ~baldurianbarhop/Fully Booked/scripts/BFFOR.baf~
-COMPILE ~baldurianbarhop/Fully Booked/scripts/BFSCR.baf~
-COMPILE ~baldurianbarhop/Fully Booked/scripts/BFSCR2.baf~
+EXTEND_BOTTOM ~AR2616.bcs~   ~%MOD_FOLDER%/Fully Booked/scripts/AR2616.baf~
+EXTEND_BOTTOM ~AR3300.bcs~   ~%MOD_FOLDER%/Fully Booked/scripts/AR3300.baf~
+EXTEND_BOTTOM ~AR3320.bcs~   ~%MOD_FOLDER%/Fully Booked/scripts/AR3320.baf~
+EXTEND_BOTTOM ~BFFOR.bcs~    ~%MOD_FOLDER%/Fully Booked/scripts/BFFOR.baf~
+COMPILE ~%MOD_FOLDER%/Fully Booked/scripts/BFSCR.baf~
+COMPILE ~%MOD_FOLDER%/Fully Booked/scripts/BFSCR2.baf~
 
 // cutscenes
-COMPILE ~baldurianbarhop/Fully Booked/cutscenes~
-		
-// dialogues
-COMPILE ~baldurianbarhop/Fully Booked/d~
+COMPILE ~%MOD_FOLDER%/Fully Booked/cutscenes~
 
-// bams 
-COPY ~baldurianbarhop/Fully Booked/bam~ ~override~
+// dialogues
+COMPILE ~%MOD_FOLDER%/Fully Booked/d~
+
+// bams
+COPY ~%MOD_FOLDER%/Fully Booked/bam~ ~override~
 
 // areas
-COPY ~baldurianbarhop/Fully Booked/area~ ~override~
+COPY ~%MOD_FOLDER%/Fully Booked/area~ ~override~
 
 // items
 // satchel
-COPY ~baldurianbarhop/Fully Booked/itm/BFSCB.STO~ ~override~
-COPY ~baldurianbarhop/Fully Booked/itm/BFSCB.ITM~ ~override~
+COPY ~%MOD_FOLDER%/Fully Booked/itm/BFSCB.STO~ ~override~
+COPY ~%MOD_FOLDER%/Fully Booked/itm/BFSCB.ITM~ ~override~
 SAY NAME1 ~Satchel of the Avowed~
 SAY NAME2 ~Satchel of the Avowed~
 SAY DESC ~Satchel of the Avowed
-
 This enchanted satchel is standard issue among the Avowed of Candlekeep. Designed to aid in the secure transport of commissioned copies and rare texts, it allows its wielder to carry several books without burdening them. It also shields the tomes within from weather and wear: a necessity for those tasked with safeguarding Candlekeep's ever-growing trove of knowledge.
 
 STATISTICS:
@@ -160,16 +158,16 @@ Weight: 2~
 
 // staff
 // description still a wip
-COPY ~baldurianbarhop/Fully Booked/itm/BFOSTF.ITM~ ~override~
+COPY ~%MOD_FOLDER%/Fully Booked/itm/BFOSTF.ITM~ ~override~
 SAY NAME1 ~Staff of the Ogre Magi~
 SAY NAME2 ~Staff of the Ogre Magi~
 SAY DESC ~Staff of the Ogre Magi
-
 This crude staff radiates a lingering chill. Its enchantment allows the wielder to unleash a burst of freezing air, mimicking the sorcery of the ogre mage who wielded it.
 
 STATISTICS:
 
-Special Ability: Cone of Cold once per day
+Charge abilities:
+– Cone of Cold once per day
 
 THAC0: +1
 Damage: 1d6+1 (crushing)
@@ -181,14 +179,18 @@ Requires:
 
 Weight: 4~
 
-// BEGIN ~Liquid Assets~
+// BEGIN ~Liquid Assets~ DESIGNATED 20
+// REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // thieves trying to smuggle barrels out of the tavern
 
-// BEGIN ~Room for One More~
+// BEGIN ~Room for One More~ DESIGNATED 30
+// REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // ghost in the tavern
 
-// BEGIN ~Mice to Meet You~
+// BEGIN ~Mice to Meet You~ DESIGNATED 40
+// REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // deal with the rats & mice in the cellar
 
-// BEGIN ~At Wit's End~
+// BEGIN ~At Wit's End~ DESIGNATED 50
+// REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // a wit & riddle contest against an egotistical mage

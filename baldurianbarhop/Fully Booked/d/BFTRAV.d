@@ -25,7 +25,7 @@ END
 ++ ~Three books, one sigh of boredom. Are we done?~ EXTERN NOBL10 BFPICTURE
 
 CHAIN NOBL10 BFPICTURE
-~I cannot resist sharing. Take the book - yes, carefully. Flip to page twenty-three and Admire the fine detail of the illustration. I still recall the verse by heart...~
+~I cannot resist sharing. Take the book - yes, carefully. Flip to page twenty-three and admire the fine detail of the illustration. I still recall the verse by heart...~
 == NOBL10 ~Through amber leaves,
 the travellers stray,
 Where fairy dragons,

@@ -51,7 +51,7 @@ END
 + ~OR(2) Class(Player1,THIEF_ALL) CheckStatGT(Player1,14,DEX)~ + ~Quicker than your eyes can follow...and my mug's empty.~ EXTERN BFSD2 BFSDwarf2.Cheat1
 
 CHAIN BFSD2 BFSDwarf2.Fail
-~Should have said you're a light-weight.~
+~Should have said you're a lightweight.~
 == BFSD1 ~Points fer bravery though.~
 END
 ++ ~...~ EXTERN BFSD2 BFSDwarf2.2
@@ -126,6 +126,6 @@ END
 ++ ~Is this...a mug on a stick?~ EXTERN BFSD2 BFSDwarf2.Reward
 
 CHAIN BFSD2 BFSDwarf2.Reward
-~She'll treat you well, she will. Come, Harben, lets try the tavern the next street over. Heard they sell actual dwarven ale. Not this watered down slop.~
+~She'll treat you well, she will. Come, Harben, let's try the tavern the next street over. Heard they sell actual dwarven ale. Not this watered down slop.~
 DO ~GiveItemCreate("BFSMG",Player1,1,0,0) AddJournalEntry(@9007, QUEST_DONE) ActionOverride("BFSD1",EscapeArea()) EscapeArea()~
 EXIT

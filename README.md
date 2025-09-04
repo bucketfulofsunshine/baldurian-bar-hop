@@ -1,4 +1,5 @@
 # Baldurian Bar Hop
+
 A collection of tongue-in-cheek D&D encounters for BGEE.
 
 Take part in a drinking contest with dwarves, or assist an Avowed of Candlekeep with delivering a book.
@@ -17,13 +18,13 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## CHANGELOG
 
-#### 20250902 - Nightly.
+### 20250902 - Nightly
 
 * Completed Fully Booked & Plot Twist. Three quests can now be completed.
 
 ## FUTURE PLANS
 
-* *Liquid Assets*. A group of thieves are trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
+* *Liquid Assets*. A group of thieves is trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
 
 * *Room for One More*. An inn room is haunted by a former resident. Shamans can speak with the ghost & solve the mystery (IWD-2 callback).
 
@@ -35,7 +36,7 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## LICENSING
 
-* This mod is open source. That means anyone is free to fork, make pull requests or alter content. While I'd prefer people approach me if they want new content (e.g. adding new lines for classes/races), crossmod is free real estate. 
+* This mod is open source. That means anyone is free to fork, make pull requests or alter content. While I'd prefer people approach me if they want new content (e.g. adding new lines for classes/races), crossmod is free real estate.
 
 ## CREDITS
 
@@ -43,4 +44,4 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my questions. :)
 
-* [@royalprotector](https://github.com/szaumoor) for continued modding wisdom & friendship. 
+* [@royalprotector](https://github.com/szaumoor) for continued modding wisdom & friendship.
