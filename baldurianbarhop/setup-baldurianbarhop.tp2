@@ -86,8 +86,8 @@ BEGIN ~Fully Booked & Plot Twist~ DESIGNATED 10
 REQUIRE_PREDICATE GAME_IS ~bgee~ ~This mod requires BGEE~
 // book delivery to beregost & getting stuck inside said book
 
-ADD_JOURNAL TITLE (@9000) @9001 @9002 USING ~baldurianbarhop/languages/english/journal.tra~
-ADD_JOURNAL TITLE (@9003) @9004 @9005 USING ~baldurianbarhop/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9000) @9001 @9002 USING ~%MOD_FOLDER%/languages/english/journal.tra~
+ADD_JOURNAL TITLE (@9003) @9004 @9005 USING ~%MOD_FOLDER%/languages/english/journal.tra~
 
 // cre
 // avowed
