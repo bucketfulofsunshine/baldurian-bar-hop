@@ -1,4 +1,4 @@
-# Baldurian Bar Hop
+# Baldurian Bar Hop (for BGEE or EET)
 
 A collection of tongue-in-cheek D&D encounters for BGEE.
 
