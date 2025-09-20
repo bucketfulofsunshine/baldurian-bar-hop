@@ -1,0 +1,12 @@
+IF
+Global("BFStorybookSpawn","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("BFSCR2",[1087.521],NE)
+CreateCreature("BFFAIR",[578.485],SW)
+CreateCreature("BFFAI2",[671.560],W)
+CreateCreature("BFFAI3",[400.637],NE)
+CreateCreature("BFDRAG",[470.561],E)
+SetGlobal("BFStorybookSpawn","GLOBAL",1)
+Continue()
+END

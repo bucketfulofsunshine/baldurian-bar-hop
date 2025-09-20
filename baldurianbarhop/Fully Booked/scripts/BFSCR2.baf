@@ -1,0 +1,45 @@
+// intro & wolves
+IF
+    Global("BFGAZZINTRO","GLOBAL",0)  
+    Detect(Player1)
+THEN
+    RESPONSE #100
+	SetGlobal("BFGAZZINTRO","GLOBAL",1) 
+    StartDialogueNoSet(Player1)
+	Continue()
+END
+
+// fairy dragons & ogre mage
+IF
+    Global("BFSGAZZCONVO","GLOBAL",1)
+    Detect(Player1)
+THEN
+    RESPONSE #100
+	SetGlobal("BFSGAZZCONVO","GLOBAL",2)
+    StartDialogueNoSet(Player1)
+	Continue()
+END
+
+// outro
+IF
+    Global("BFSGAZZCONVO","GLOBAL",3)
+    Detect(Player1)
+	Dead("BPOGMA01")
+THEN
+    RESPONSE #100
+	SetGlobal("BFSGAZZCONVO","GLOBAL",4)
+    StartDialogueNoSet(Player1)
+	Continue()
+END
+
+// quest completion
+IF
+    AreaCheck("AR3320")
+    Detect(Player1)
+	Global("BFSBOOKESCAPE","GLOBAL",0)
+THEN
+    RESPONSE #100
+	SetGlobal("BFSBOOKESCAPE","GLOBAL",1)
+    StartDialogueNoSet(Player1)
+	Continue()
+END
