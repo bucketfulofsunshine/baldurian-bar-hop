@@ -1,4 +1,4 @@
-![A painted map of a Forest, meant to mimic a book illustration](https://64.media.tumblr.com/b2683419342de855a100d6e137f8d984/79f859627604c2f2-7a/s2048x3072/bfeed628a1f9560ea144368c08f17b1792c56b97.pnj)
+![A painted map of a Forest, meant to mimic a book illustration](https://64.media.tumblr.com/8795d3ba859266518b6e1590bdaa069f/f83467379c46b182-d8/s2048x3072/5646d7b378d4b807d5045f7f614ccafdbe7416a5.pnj)
 
 
 # Baldurian Bar Hop (for BGEE or EET)
