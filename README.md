@@ -43,8 +43,6 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 
 ## CREDITS
 
+* [@kaelyn](https://github.com/szaumoor) for continued modding wisdom & (as usual) fixing my dumb item errors. 
 * The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, sensei! <3
-
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my questions. :)
-
-* [@kaelyn](https://github.com/szaumoor) for continued modding wisdom & friendship.
