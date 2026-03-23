@@ -1,7 +1,7 @@
 ![A painted map of a Forest, meant to mimic a book illustration](https://64.media.tumblr.com/23c57f8545150453fff36e450672d374/f83467379c46b182-3c/s1280x1920/87ee602c195e2a5cb520dec5111bbd161a164a16.pnj)
 
 
-# Baldurian Bar Hop (for BGEE or EET)
+# Baldurian Bar Hop (for BGEE)
 
 A collection of tongue-in-cheek D&D encounters for BGEE.
 
