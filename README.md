@@ -15,6 +15,10 @@ The taverns & inns of Baldur's Gate are brimming with adventures for those brave
 
 A: By doing what the mod's name suggests: hopping from tavern-to-inn & seeking out the new NPCs within.
 
+### Q: Any compatibility issues?
+
+A: If you progress too far in the Gorgon's Eye guild, before finishing the quest with Gerard Travenhurst, then it can't be completed since the Gorgon's Eye mod makes him dislike the party.
+
 ### Q: Does this add balanced gameplay?
 
 A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical. So, whatever I think is amusing, gets added to the pile. Some items might empower the party, others may cause them to be underpowered.
@@ -46,3 +50,4 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 * [@kaelyn](https://github.com/szaumoor) for continued modding wisdom & (as usual) fixing my dumb item errors. 
 * The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, sensei! <3
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my questions. :)
+* Big thanks to [@lumorus](https://www.gibberlings3.net/profile/14127-lumorus/) for bringing some item bugs & compat issues to my attention. 
