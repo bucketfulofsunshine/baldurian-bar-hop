@@ -1,5 +1,9 @@
-![A painted map of a Forest, meant to mimic a book illustration](https://64.media.tumblr.com/23c57f8545150453fff36e450672d374/f83467379c46b182-3c/s1280x1920/87ee602c195e2a5cb520dec5111bbd161a164a16.pnj)
 
+
+
+<p align="center">
+  <img src="https://64.media.tumblr.com/ce3bfdce99a1f25b088f458217a108bc/f83467379c46b182-cb/s640x960/63977dc692dd95f56f6e5df45c6bfbf378e16327.pnj" />
+</p>
 
 # Baldurian Bar Hop (for BGEE)
 
@@ -51,3 +55,5 @@ A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical
 * The ever-wonderful [@zenblack](https://github.com/zenblack) for creating the Dwarven Mug BAM. And for teaching me the method to create my own. I hope I've done your teachings justice, sensei! <3
 * [@dark0dave](https://github.com/dark0dave) for being the silent guardian of ALL my github mods & answering my questions. :)
 * Big thanks to [@lumorus](https://www.gibberlings3.net/profile/14127-lumorus/) for bringing some item bugs & compat issues to my attention. 
+
+![A painted map of a Forest, meant to mimic a book illustration](https://64.media.tumblr.com/23c57f8545150453fff36e450672d374/f83467379c46b182-3c/s1280x1920/87ee602c195e2a5cb520dec5111bbd161a164a16.pnj)
