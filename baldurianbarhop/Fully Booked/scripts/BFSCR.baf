@@ -1,0 +1,16 @@
+IF 
+	GlobalLT("BFSCRTALKED","GLOBAL",1)
+	Global("BFSCRBARK","GLOBAL",0)
+	See([PC])
+THEN
+	RESPONSE #100
+	  SetGlobal("BFSCRBARK","GLOBAL",1)
+	  DisplayStringHead(Myself,@0)
+	  Wait(10)
+	  DisplayStringHead(Myself,@1)
+	  Wait(10)
+	  DisplayStringHead(Myself,@2)
+	  Wait(10)
+	  DisplayStringHead(Myself,@3)	
+	  Continue()
+END 

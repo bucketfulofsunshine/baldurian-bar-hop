@@ -1,0 +1,10 @@
+IF
+Global("BFSGazzSpawn","AR3320",0)
+Global("BFSGAZZCONVO","GLOBAL",5)
+THEN
+RESPONSE #100
+CreateCreature("BFSCR2",[362.190],SE)
+CreateVisualEffectObject("SPDISPMA","BFSCR2")
+SetGlobal("BFSGazzSpawn","AR3320",1)
+Continue()
+END

@@ -1,0 +1,25 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        SetCutSceneBreakable(FALSE)
+		PlaySound("EFF_M10")
+		CreateVisualEffectObject("SPDISPMA",Player1)
+		CreateVisualEffectObject("SPDISPMA",Player2)
+		CreateVisualEffectObject("SPDISPMA",Player3)
+		CreateVisualEffectObject("SPDISPMA",Player4)
+		CreateVisualEffectObject("SPDISPMA",Player5)
+		CreateVisualEffectObject("SPDISPMA",Player6)		
+        Wait(3)
+        LeaveAreaLUAPanic("AR3320","",[295.284],NW)
+        LeaveAreaLUA("AR3320","",[295.284],NW)
+        ActionOverride(Player2,LeaveAreaLUA("AR3320","",[436.332],W))
+        ActionOverride(Player3,LeaveAreaLUA("AR3320","",[477.306],W))
+        ActionOverride(Player4,LeaveAreaLUA("AR3320","",[515.282],W))
+        ActionOverride(Player5,LeaveAreaLUA("AR3320","",[715.347],S))
+        ActionOverride(Player6,LeaveAreaLUA("AR3320","",[757.374],S))
+		MultiPlayerSync()
+        SmallWait(25)
+        EndCutSceneMode()
+END
