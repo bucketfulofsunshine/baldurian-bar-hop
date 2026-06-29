@@ -7,9 +7,9 @@
 
 # Baldurian Bar Hop (for BGEE)
 
-A collection of tongue-in-cheek D&D encounters for BGEE.
+A collection of tavern encounters for BGEE.
 
-Take part in a drinking contest with dwarves, or assist an Avowed of Candlekeep with delivering a book.
+Take part in a drinking contest with dwarves, assist an Avowed of Candlekeep with delivering a book, or attend a masquerade of monsters.
 
 The taverns & inns of Baldur's Gate are brimming with adventures for those brave enough to seek them out. Survive the chaos & your party may earn some truly unique (& often humorous) rewards.
 
@@ -17,31 +17,33 @@ The taverns & inns of Baldur's Gate are brimming with adventures for those brave
 
 ### Q: Where can I find these encounters?
 
-A: By doing what the mod's name suggests: hopping from tavern-to-inn & seeking out the new NPCs within.
+A: 
 
-### Q: Any compatibility issues?
+For Fully Booked & Plot Twist - speak to the Avowed in the Candlekeep Inn/Tavern prior to leaving the prologue.
 
-A: If you progress too far in the Gorgon's Eye guild, before finishing the quest with Gerard Travenhurst, then it can't be completed since the Gorgon's Eye mod makes him dislike the party.
+For Dress to Distress - speak to the Usher in the Three Kegs Inn. 
 
-### Q: Does this add balanced gameplay?
+For Thirst Things First - speak to the dwarves in the Generic Tavern and Inn in Northwest Baldur's Gate (AR0165). 
 
-A: Highly unlikely. The encounters & rewards are meant to be weird and whimsical. So, whatever I think is amusing, gets added to the pile. Some items might empower the party, others may cause them to be underpowered.
+### Q: Any mod compatibility issues?
+
+A: Fully Booked & Plot Twist: If you progress too far in the Gorgon's Eye guild, before finishing the quest with Gerard Travenhurst, then it cannot be completed since the Gorgon's Eye mod makes him dislike the party.
 
 ## CHANGELOG
 
 ### 20250902 - Nightly
 
-* Completed Fully Booked & Plot Twist. Three quests can now be completed.
+* Three quests (Fully Booked, Plot Twist, Thirst Things First) can now be completed.
+
+### 20260629 - Nightly
+
+* Implementation started on Dress to Distress.
 
 ## FUTURE PLANS
 
-* *Liquid Assets*. A group of thieves is trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
+* *Liquid Assets*. A group of thieves are trying to smuggle crates of ale through the tavern. Assist them in their task or get them arrested.
 
-* *Room for One More*. An inn room is haunted by a former resident. Shamans can speak with the ghost & solve the mystery (IWD-2 callback).
-
-* *Mice to Meet You*. Rats in a tavern cellar. The classic conundrum. Druids can talk to the rats & get them to move to greener pastures.
-
-* *At Wit's End*. A mage claims to know more than all his peers combined. Challenge him to a duel of wits.
+* *Mice to Meet You*. Rats in a tavern cellar. The classic conundrum. 
 
 * More mystery, more adventure, more...romance?
 
