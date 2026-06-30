@@ -1,0 +1,9 @@
+IF
+    Global("BFILLITALK","GLOBAL",0)
+    InMyArea(Player1)
+THEN
+    RESPONSE #100
+        SetGlobal("BFILLITALK","GLOBAL",1)
+        FaceObject(Player1)
+        StartDialogueNoSet(Player1)
+END

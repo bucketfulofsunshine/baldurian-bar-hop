@@ -1,0 +1,18 @@
+IF
+    True()
+THEN
+    RESPONSE #100
+        CutSceneId(Player1)
+        SetCutSceneBreakable(FALSE)
+        LeaveAreaLUAPanic("BFKEG","",[590.437],S)
+        LeaveAreaLUA("BFKEG","",[590.437],S)
+        ActionOverride(Player2,LeaveAreaLUA("BFKEG","",[597.388],S))
+        ActionOverride(Player3,LeaveAreaLUA("BFKEG","",[632.357],S))
+        ActionOverride(Player4,LeaveAreaLUA("BFKEG","",[620.331],S))
+        ActionOverride(Player5,LeaveAreaLUA("BFKEG","",[661.298],S))
+        ActionOverride(Player6,LeaveAreaLUA("BFKEG","",[655.270],S))
+        MultiPlayerSync()
+        SmallWait(25)
+        EndCutSceneMode()
+END
+

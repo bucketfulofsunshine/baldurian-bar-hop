@@ -1,0 +1,18 @@
+IF
+Global("BFUsherSpawn","AR0119",0)
+THEN
+RESPONSE #100
+SetGlobal("BFUsherSpawn","AR0119",1)
+CreateCreature("BFUSH",[530.401],SE)
+Continue()
+END
+
+IF
+Global("BFUsherSpawn","AR0119",1)
+Global("BFILLICONVO","GLOBAL",1)
+THEN
+RESPONSE #100
+SetGlobal("BFUsherSpawn","AR0119",2)
+ActionOverride("BFUSH",DestroySelf())
+Continue()
+END

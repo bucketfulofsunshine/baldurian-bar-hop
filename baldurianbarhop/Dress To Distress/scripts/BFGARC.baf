@@ -1,0 +1,48 @@
+IF
+    StateCheck(Myself,STATE_PANIC)
+THEN
+    RESPONSE #100
+        RandomWalkContinuous()
+END
+
+IF
+    AttackedBy([GOODCUTOFF],DEFAULT)
+    !Allegiance(Myself,ENEMY)
+THEN
+    RESPONSE #100
+        Enemy()
+END
+
+// kite: if something's gotten in close, back off without leaving the area
+IF
+    See(NearestEnemyOf(Myself))
+    Range(NearestEnemyOf(Myself),4)
+THEN
+    RESPONSE #100
+        RunAwayFromNoLeaveArea(NearestEnemyOf(Myself),3)
+END
+
+// shoot, but only when not actively kiting this round
+IF
+    See(NearestEnemyOf(Myself))
+    InWeaponRange(LastSeenBy(Myself))
+    !Range(NearestEnemyOf(Myself),4)
+THEN
+    RESPONSE #100
+        AttackReevaluate(NearestEnemyOf(Myself),30)
+END
+
+IF
+    AttackedBy([ANYONE],DEFAULT)
+    InWeaponRange(LastAttackerOf(Myself))
+THEN
+    RESPONSE #100
+        Attack(LastAttackerOf(Myself))
+END
+
+IF
+    See(NearestEnemyOf(Myself))
+THEN
+    RESPONSE #100
+        MoveToObject(LastSeenBy(Myself))
+END

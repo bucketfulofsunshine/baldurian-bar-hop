@@ -1,0 +1,41 @@
+IF
+Global("BFPatronsSpawn","GLOBAL",0)
+THEN
+RESPONSE #100
+CreateCreature("BFILLI",[538.424],NE)
+CreateCreature("BFSPID",[313.346],W)
+CreateCreature("BFKOB",[223.366],N)
+CreateCreature("BFFASH",[539.629],W)
+CreateCreature("BFWOLF",[813.358],S)
+CreateCreature("BFVAMP",[436.158],SE)
+CreateCreature("BFGAXE",[935.550],W)
+CreateCreature("BFGARC",[1026.488],S)
+SetGlobal("BFPatronsSpawn","GLOBAL",1)
+Continue()
+END
+
+IF
+    Dead("BFGAXE")
+	Global("BFGOBFIGHT","GLOBAL",1) 
+    Global("BFGobWave1","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("BFGobWave1","GLOBAL",1)
+        CreateCreature("BFGWAR",[960.641],NE)
+        CreateCreature("BFGSHR",[807.738],N)
+		DisplayStringHead("BFGWAR",@4)
+END
+
+IF
+    Dead("BFGARC")
+	Global("BFGOBFIGHT","GLOBAL",1) 
+    Global("BFGobWave2","GLOBAL",0)
+THEN
+    RESPONSE #100
+        SetGlobal("BFGobWave2","GLOBAL",1)
+        CreateCreature("BFGWIT",[842.603],N)
+		DisplayStringHead("BFGWIT",@5)
+		Wait(2)
+        CreateCreature("BFGRID",[821.770],N)
+END
+
