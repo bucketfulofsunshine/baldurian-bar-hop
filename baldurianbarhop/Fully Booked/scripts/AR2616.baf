@@ -1,8 +1,0 @@
-IF
-Global("BFSScribeSpawn","AR2616",0)
-THEN
-RESPONSE #100
-CreateCreature("BFSCR",[743.311],SE)
-SetGlobal("BFSScribeSpawn","AR2616",1)
-Continue()
-END
